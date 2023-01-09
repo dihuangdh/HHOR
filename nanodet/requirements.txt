@@ -1,0 +1,13 @@
+Cython
+matplotlib
+numpy
+opencv-python
+pyaml
+pycocotools
+pytorch-lightning>=1.2.5
+tensorboard
+termcolor
+torch>=1.6
+torchmetrics
+torchvision
+tqdm
