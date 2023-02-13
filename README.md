@@ -8,6 +8,9 @@
 > Di Huang, Xiaopeng Ji, Xingyi He, Jiaming Sun, Tong He, Qing Shuai, Wanli Ouyang, Xiaowei Zhou  
 > Siggraph Asia 2022 Conference Track
 
+## Updates
+- 2023/02/13: For people who do not want to run hand tracking, we provide the processed hand tracking results: [HOD_S1_HT](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/Ed4ZxX_X8btFv5Mco1B1ZjoB-TdG3Q5-JfwUiM3cJKWctQ?e=oqO08f) and [HOD_D1_HT](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/EXvp8azRV5FJr5PGCsMqiOQB2R1f09RkfWw7KcqQbkqSOw?e=t2US7M). HOD_S1_HT use the same hand tracking  algorithm as the paper (sharing hand parameters), while HOD_D1_HT does not share hand parameters.
+
 ## TODO List
 - [x] Release the minimal runnable code.
 - [ ] Release the hand tracking code.
@@ -82,7 +85,8 @@ CUDA_VISIBLE_DEVICES=0 python exp_runner.py --mode train --conf ./confs/demo/han
 CUDA_VISIBLE_DEVICES=0 python exp_runner.py --mode validate_mesh --conf ./confs/demo/hand_scanner_wmask_wbarf_wsem_warp10.0_mask5_demo.conf --case demo --is_continue
 ```
 
-After running the above commands, you can find the reconstructed mesh in `NeuS/exp/demo/handscanner/meshes/00100000_org.ply` and `NeuS/exp/demo/handscanner/meshes/00100000_obj.ply`. The `*_org.ply` is the reconstructed mesh with the hand and the `*_obj.ply` is the reconstructed mesh without the hand. For `00100000_obj.ply`, you can use MeshLab to remove the useless parts (e.g., the remaining hand) and complete the hole with Poisson reconstruction.
+After running the above commands, you can find the reconstructed mesh in `NeuS/exp/demo/handscanner/meshes/00100000_org.ply` and `NeuS/exp/demo/handscanner/meshes/00100000_obj.ply`. The `*_org.ply` is the reconstructed mesh with the hand and the `*_obj.ply` is the reconstructed mesh without the hand. For `00100000_obj.ply`, you can use MeshLab to remove the useless parts (e.g., the remaining hand) and complete the hole with Poisson reconstruction or [
+hole_fixer](https://github.com/Erkaman/hole_fixer).
 
 ## Dataset
 * [HOD_S1](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/EaE4g4lZBE9Flk-aqMkl8nQBImzSkUASG1oESR3QeK8WGw?e=Pd4WNv) is the main dataset used in the paper, which contains hand-held objects with fixed grasping poses.
