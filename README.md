@@ -9,8 +9,8 @@
 > Siggraph Asia 2022 Conference Track
 
 ## Updates
-- 2023/02/13: For people who do not want to run hand tracking, we provide the processed hand tracking results: [HOD_S1_HT](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/Ed4ZxX_X8btFv5Mco1B1ZjoB-TdG3Q5-JfwUiM3cJKWctQ?e=oqO08f) and [HOD_D1_HT](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/EXvp8azRV5FJr5PGCsMqiOQB2R1f09RkfWw7KcqQbkqSOw?e=t2US7M). HOD_S1_HT use the same hand tracking  algorithm as the paper (sharing hand parameters), while HOD_D1_HT does not share hand parameters.
 - 2023/06/19: The hand tracking code is released here: [EasyMocap](https://chingswy.github.io/easymocap-public-doc/develop/03_fitsmpl_monocular.html#fit-mano-to-fixed-hand-pose). Note that this hand tracking version is slightly different with the original hand tracking code.
+- 2023/02/13: For people who do not want to run hand tracking, we provide the processed hand tracking results: [HOD_S1_HT](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/Ed4ZxX_X8btFv5Mco1B1ZjoB-TdG3Q5-JfwUiM3cJKWctQ?e=oqO08f) and [HOD_D1_HT](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/dhua9550_uni_sydney_edu_au/EXvp8azRV5FJr5PGCsMqiOQB2R1f09RkfWw7KcqQbkqSOw?e=t2US7M). HOD_S1_HT use the same hand tracking  algorithm as the paper (sharing hand parameters), while HOD_D1_HT does not share hand parameters.
 
 ## TODO List
 - [x] Release the minimal runnable code.
